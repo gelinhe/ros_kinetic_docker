@@ -11,5 +11,5 @@ WORKDIR /temp
 git clone https://github.com/yuzhangbit/apollo_standalone
 WORKDIR /temp/apollo_standalone
 RUN bash scripts/install_dependencies.sh
-RUN echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
+RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 WORKDIR /home
