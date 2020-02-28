@@ -5,7 +5,7 @@ RUN apt-get install git -y
 RUN apt-get install sudo -y
 RUN apt-get install wget -y
 RUN apt-get install gedit -y 
-RUN apt-get install autoconf automake libtool
+RUN apt-get install autoconf automake libtool -y 
 WORKDIR /home
 RUN git clone https://github.com/gelinhe/apollo_standalone
 WORKDIR /home/apollo_standalone
