@@ -10,11 +10,11 @@ RUN add-apt-repository ppa:vascofalves/gnome-backports
 RUN apt-get update
 RUN apt-get install nautilus
 WORKDIR /
-RUN git clone https://github.com/gelinhe/apollo_standalone
+RUN git clone --recursive git@github.com:yuzhangbit/apollo_standalone.git
 WORKDIR /apollo_standalone
 RUN bash scripts/install_dependencies.sh
 RUN mkdir -p src/apollo/build 
-WORKDIR /apollo_standalone
+WORKDIR /home
 RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
 RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 
