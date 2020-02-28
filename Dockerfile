@@ -7,7 +7,7 @@ RUN apt-get install sudo -y
 RUN apt-get install wget -y
 RUN apt-get install gedit -y
 WORKDIR /temp
-git clone https://github.com/yuzhangbit/apollo_standalone
+RUN git clone https://github.com/yuzhangbit/apollo_standalone
 WORKDIR /temp/apollo_standalone
 RUN bash scripts/install_dependencies.sh
 RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
