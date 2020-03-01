@@ -10,6 +10,7 @@ RUN add-apt-repository ppa:vascofalves/gnome-backports
 RUN apt-get update
 RUN apt-get install nautilus -y
 RUN apt-get install python-pip -y
+RUN pip install protobuf==3.3.0
 WORKDIR /
 RUN git clone --recursive git@github.com:yuzhangbit/apollo_standalone.git
 WORKDIR /apollo_standalone
