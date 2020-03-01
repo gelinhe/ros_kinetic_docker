@@ -8,7 +8,8 @@ RUN apt-get install gedit -y
 RUN apt-get install autoconf automake libtool -y 
 RUN add-apt-repository ppa:vascofalves/gnome-backports
 RUN apt-get update
-RUN apt-get install nautilus
+RUN apt-get install nautilus -y
+RUN apt-get install python-pip -y
 WORKDIR /
 RUN git clone --recursive git@github.com:yuzhangbit/apollo_standalone.git
 WORKDIR /apollo_standalone
