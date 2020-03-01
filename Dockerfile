@@ -17,5 +17,6 @@ RUN bash scripts/install_dependencies.sh
 RUN mkdir -p src/apollo/build 
 WORKDIR /home
 RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
+RUN apt-get update
 RUN echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
 
