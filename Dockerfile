@@ -6,7 +6,6 @@ RUN apt-get install sudo -y
 RUN apt-get install wget -y
 RUN apt-get install gedit -y 
 RUN apt-get install autoconf automake libtool -y 
-RUN add-apt-repository ppa:vascofalves/gnome-backports
 RUN apt-get update
 RUN apt-get install nautilus -y
 RUN apt-get install python-pip -y
