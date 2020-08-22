@@ -5,6 +5,7 @@ RUN apt-get install git -y
 RUN apt-get install sudo -y
 RUN apt-get install wget -y
 RUN apt-get install gedit -y 
+RUN apt-get install zip -y
 RUN apt-get install autoconf automake libtool -y 
 RUN apt-get update
 RUN apt-get install nautilus -y
