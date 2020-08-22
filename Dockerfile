@@ -11,7 +11,7 @@ RUN apt-get install nautilus -y
 RUN apt-get install python-pip -y
 RUN pip install protobuf==3.3.0
 WORKDIR /
-RUN git clone --recursive git@github.com:yuzhangbit/apollo_standalone.git
+RUN git clone --recursive https://github.com/gelinhe/apollo_standalone
 WORKDIR /apollo_standalone
 RUN bash scripts/install_dependencies.sh
 RUN mkdir -p src/apollo/build 
